@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#image-main-bg {
+    position: relative;
+    width:100%; 
+    height:100%; 
+    background-image:url("imagebackground.jpg");
+    background-size:cover;
+	z-index:0.5;
+}
+
+
+/*.menu-btn {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 1px solid #aaa;
+    border-radius: 3px; 
+}
+
+.menu-btn-burger {
+
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+    transform: translateY(-7px);
+}
+
+.menu-btn-burger::after {
+    transform: translateY(7px);
+}
+
+.menu-btn.open .menu-btn-burger {
+    transform: translateX(-28px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+    transform: rotate(45deg) translate(20px, -20px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+    transform: rotate(-45deg) translate(20px, 20px);
+}*/
+
+
+#maincontainer {
+	
+	padding-top: 13%;
+    text-align: center;
+	color: white;
+    font-family: Garamond, EB Garamond, Georgia, serif;
+}
+
+#myName 
+{
+    font-weight: bold;
+    padding: 25px 0 0 25px;
+}
+
+#myName h5 {
+    display: inline;
+}
+
+#myName h5 a{
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    display: inline;
+}
+
+#myName h5 a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+#myName h6 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #888888;
+    display: inline;
+}
+
+#seperator {
+    
+    margin: 0 8px 5px;
+    width: 40px;
+    color: #888888;
+    height: 2px;   
+    background-color: #888888;
+    display: inline-block;
+}
+
+#main {
+	
+	font-size: 56px;
+	font-weight: bold;
+	text-shadow: 3px 0 8px black;
+	
+}
+
+#mainsubs {
+	
+	font-size: 25px;
+	font-weight: none;
+	text-shadow: 2px 2px 2px #222222;
+}
+
+#logos {
+    margin-top: 6rem;
+}
+
+.logo {
+	
+	width: 45px;
+	margin: 0.5rem;
+	transition: 0.3s ease-in-out;
+	
+}
+
+.logo:hover {
+		
+	transform: scale(1.1, 1.1);
+	
+}
