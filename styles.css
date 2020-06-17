@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+/*#mainNav {
+    background: rgba(25, 25, 25, 1);
+}*/
+
 #image-main-bg {
     position:absolute;
     width:100%; 
