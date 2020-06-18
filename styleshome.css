@@ -109,7 +109,7 @@ html, body{
     font-family: "Fira Sans", sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    color: #888888;
+    color: #444;
     display: inline;
 }
 
@@ -117,9 +117,8 @@ html, body{
     
     margin: 0 8px 5px;
     width: 40px;
-    color: #888888;
     height: 2px;   
-    background-color: #888888;
+    background-color: #444;
     display: inline-block;
 }
 
