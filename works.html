@@ -9,8 +9,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="styles.css" rel="stylesheet" />	
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+
 		<!-- unpkg -->
 		<script src="https://unpkg.com/@barba/core"></script>
+
+		
 
 		<!-- jsdelivr -->
 		<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
@@ -21,31 +25,123 @@
   
 	<body>
 	
-		<nav id="mainNav" class = "navbar navbar-expand-lg text-uppercase fixed-top">
-            <div class="container">
-				<a class="navbar-brand navtext js-scroll-trigger" href="../index.html">Niranjan Raghu</a>
-				<div class = "menu-btn d-lg-none" data-toggle = "collapse" data-target = "#navbarResponsive">
-                    <div class="menu-btn-burger">
+		<div class="menu-wrap">
+			<input type="checkbox" class="toggler">
+			<div class="hamburger">
+				<div id = "colour-class"></div>
+			</div>
+			<div class="menu">
+				<div>
+					<div>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="works.html">My Works</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="fullpage">
+
+			<div class="section s1">
+
+				<div class = "row">
+					<div class = "col col-md-5">
+
+						<h1>CrossRoads</h1>
+						<h2>(Landing Page)</h2>
+
+						<h5 class = "subtext">Crossroads is a Kerala Based YouTube channel that regularly broadcast useful and informative content related to technology and career building.</h5>
+				
+						<h6 class = "sub-subtext">(This website was designed as a part of Crossroads - Webdesign Challenge)</h6>
 
 					</div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded navtext js-scroll-trigger" href="#about">About</a></li>
-						<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded navtext js-scroll-trigger" href="works.html">My Works</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded navtext js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+					<div class = "col col-md-7">
+						<a href = "https://niranjan4r.github.io/Crossroads/" target = "_blank"><img class = "project-image" src="crossroads.png"></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="section s2">
+
+				<div class = "row">
+					<div class = "col col-md-7">
+						<img class = "project-image" src="hotel.png">
+					</div>
+
+					<div class = "col col-md-5">
+
+						<h1>Hotel Booking Management System</h1>
+
+						<h5 class = "subtext">A hotel room reservation using PHP at the backend and MySQL as the database.</h5>
+				
+						<h6 class = "sub-subtext">This website is still under development.
+						<br>The files are present in <a href = "https://github.com/niranjan4r/HotelBookingSystem" target = "_blank">GitHub.</a></h6>
+
+					</div>
+				</div>
 		
+			</div>
 
+			<div class="section s3">
 
+				<div class = "row">
+					<div class = "col col-md-5">
+
+						<h1>What's the  Weather</h1>
+
+						<h5 class = "subtext">This is one of the initial webpages I developed - a simple weather finder webpage. <br>Enter the name of a city and it fetches its weather for you from <a href = "https://openweathermap.org/" target = "_blank">https://openweathermap.org/</a> via an API. PHP is used in the backend.</h5>
+				
+						
+
+					</div>
+
+					<div class = "col col-md-7">
+						<a href = "http://captainhosting-com.stackstaging.com/weather/" target = "_blank"><img class = "project-image" src="weather.png"></a>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+
+		<script>
+
+			new fullpage("#fullpage", {
+				autoScrolling: true,
+				navigation: true,
+				anchors: ["section1", "section2", "section3"],
+				navigationTooltips: ["Crossroads", "Booking System", "Weather Page"],
+				afterLoad: function(index, nextIndex, direction){
+                if ($(".s1").hasClass("active") ){
+					var element = document.getElementById("colour-class");
+					element.classList.add("white-icon");
+					var styleElem = document.head.appendChild(document.createElement("style"));
+					var styleElem2 = document.head.appendChild(document.createElement("style"));
+					styleElem.innerHTML = "#colour-class:before {background: white;}";
+					styleElem2.innerHTML = "#colour-class:after {background: white;}";
+                } else {
+                    var element = document.getElementById("colour-class");
+					element.classList.remove("white-icon");
+					var styleElem = document.head.appendChild(document.createElement("style"));
+					var styleElem2 = document.head.appendChild(document.createElement("style"));
+					styleElem.innerHTML = "#colour-class:before {background: black;}";
+					styleElem2.innerHTML = "#colour-class:after {background: black;}";
+                }
+            }
+			})
+
+		</script>
 
 	</body>
   

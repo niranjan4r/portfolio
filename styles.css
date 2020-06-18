@@ -1,8 +1,9 @@
 body{
 	font-family: 'Roboto', sans-serif;
-  overflow-x: hidden;
-  padding: 0;
-  border: 0;
+	overflow-x: hidden;
+	padding: 0;
+	border: 0;
+	background-color: #F1F1F1;
 }
 
 .menu-wrap{
@@ -33,7 +34,6 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #fff;
 }
 
 .hamburger>div{
@@ -74,14 +74,8 @@ body{
   background-color: #fff;
 }
 
-.toggler:checked + .hamburger
-{
-  background-color: #000;
-}
-
 .toggler:checked:hover + .hamburger>div{
   transform: rotate(225deg);
-  
 }
 
 .toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
@@ -153,3 +147,100 @@ body{
 .toggler:checked ~ .menu > div > div{
 	opacity: 1;
 }
+
+.updowm-padding {
+	padding: 70px 0;	
+}
+
+.heading
+{
+	font-family: 'Abril Fatface', cursive;
+	color: #111;
+	text-shadow: 0 0 1px #fff;
+	padding-bottom: 1rem;
+}
+
+.heading p{
+	text-shadow: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+.body-content {
+	margin-top: 1rem;
+}
+
+.body-content p {
+	
+	font-family: 'Fira Sans', sans-serif;
+	color: #333;
+	font-size: 2.3rem;
+	
+}
+
+footer {
+	height: 150px;
+	background-color: #293437;
+}
+
+.skill-col {
+	justify-content: center;
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	top: 40%;
+}
+
+.skill-list {
+	margin-top: 25px;
+	text-align: left;
+}
+
+.section {
+	padding: 0px 10% 0;
+}
+
+.s1 {
+	background-color: #222222;
+	justify-content: center;
+}
+.project-image {
+	width: 40vw;
+}
+
+.s1 .row {
+	text-align: center;
+	color: #dddddd;
+	position: relative;
+}
+
+.subtext {
+	margin: 70px 0;
+}
+
+
+.s3 {
+	background-color: #c9944f;
+	justify-content: center;
+}
+
+.section a:hover {
+	text-decoration: none;
+	color: #444;
+}
+
+.white-icon {
+	background-color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	
+	.skill-col {
+		position: relative;
+		top: auto;
+		right: auto;
+		padding-top: 40px;
+	}
+  }
+
