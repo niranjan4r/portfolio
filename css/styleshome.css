@@ -11,7 +11,7 @@ html, body{
     position: relative;
     width:100%; 
     height:100%; 
-    background-image:url("imagebackground.jpg");
+    background-image:url("../img/imagebackground.jpg");
     background-size:cover;
 	z-index:0.5;
 }
