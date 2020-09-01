@@ -92,16 +92,16 @@
 				<div class = "row">
 					<div class = "col col-md-5">
 
-						<h1>What's the  Weather</h1>
+						<h1>Weather App using NodeJS</h1>
 
-						<h5 class = "subtext">This is one of the initial webpages I developed - a simple weather finder webpage. <br>Enter the name of a city and it fetches its weather for you from <a href = "https://openweathermap.org/" target = "_blank">https://openweathermap.org/</a> via an API. PHP is used in the backend.</h5>
+						<h5 class = "subtext">This is the first NodeJS webpage I developed. A simple webapp to find the weather of any city.<br> Data is fetched from mapbox.com and weatherstack.com</h5>
 				
-						
+						<h6 class = "sub-subtext">Visit the page at <a href = "https://caps-weather-app-nodejs.herokuapp.com/" target = "_blank">caps-weather-app-nodejs.herokuapp.com</a></h6>
 
 					</div>
 
 					<div class = "col col-md-7">
-						<a href = "http://captainhosting-com.stackstaging.com/weather/" target = "_blank"><img class = "project-image" src="img/weather.png"></a>
+						<a href = "https://caps-weather-app-nodejs.herokuapp.com/" target = "_blank"><img class = "project-image" src="img/weather.png"></a>
 					</div>
 				</div>
 				
@@ -121,24 +121,7 @@
 				autoScrolling: true,
 				navigation: true,
 				anchors: ["section1", "section2", "section3"],
-				navigationTooltips: ["Crossroads", "Booking System", "Weather Page"],
-				afterLoad: function(index, nextIndex, direction){
-                if ($(".s1").hasClass("active") ){
-					var element = document.getElementById("colour-class");
-					element.classList.add("white-icon");
-					var styleElem = document.head.appendChild(document.createElement("style"));
-					var styleElem2 = document.head.appendChild(document.createElement("style"));
-					styleElem.innerHTML = "#colour-class:before {background: white;}";
-					styleElem2.innerHTML = "#colour-class:after {background: white;}";
-                } else {
-                    var element = document.getElementById("colour-class");
-					element.classList.remove("white-icon");
-					var styleElem = document.head.appendChild(document.createElement("style"));
-					var styleElem2 = document.head.appendChild(document.createElement("style"));
-					styleElem.innerHTML = "#colour-class:before {background: black;}";
-					styleElem2.innerHTML = "#colour-class:after {background: black;}";
-                }
-            }
+				navigationTooltips: ["Crossroads", "Booking System", "Weather App"]
 			})
 
 		</script>

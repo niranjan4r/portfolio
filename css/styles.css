@@ -201,7 +201,7 @@ footer {
 }
 
 .s1 {
-	background-color: #222222;
+	background-color: #444;
 	justify-content: center;
 }
 .project-image {
@@ -220,7 +220,7 @@ footer {
 
 
 .s3 {
-	background-color: #c9944f;
+	background-image: radial-gradient(#9CD2EA, #D5E6F0);
 	justify-content: center;
 }
 
